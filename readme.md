@@ -17,6 +17,9 @@
 </div>
 <br />
 
+## 下载地址
+https://github.com/z1a/weibo-backup-museum/releases
+
 ## 使用说明
 
 - 简单来说，输入用户昵称后就会自动开始备份，备份完毕后就可以浏览啦！
