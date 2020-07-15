@@ -1,0 +1,55 @@
+{
+  "name": "weibo-museum",
+  "description": "Backup and browse your weibo locally",
+  "author": {
+    "name": "z1a"
+  },
+  "version": "0.1.0",
+  "main": "dist/main.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc && node ./internals/post-build.js",
+    "watch": "tsc -w",
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.electron.weibo-museum",
+    "copyright": "Copyright © 2020 z1a",
+    "files": [
+      "node_modules/**/*",
+      "dist/**/*",
+      "package.json"
+    ],
+    "mac": {
+      "target": "dmg",
+      "category": "public.app-category.utilities"
+    },
+    "win": {
+      "target": "portable"
+    },
+    "linux": {
+      "target": null
+    },
+    "directories": {
+      "buildResources": "resources",
+      "output": "release",
+      "app": "."
+    }
+  },
+  "dependencies": {
+    "moment": "^2.27.0",
+    "polished": "^3.6.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.1.1"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.41",
+    "@types/react-dom": "^16.9.8",
+    "@types/styled-components": "^5.1.1",
+    "electron": "^9.1.0",
+    "electron-builder": "^22.7.0",
+    "typescript": "^3.9.6"
+  }
+}
