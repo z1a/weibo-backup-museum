@@ -13,7 +13,7 @@
 
 <div align="center">
     <img alt="ui-1" src="./internals/readme-1.gif" />
-    <img alt="ui-2" src="./internals/readme-2.gif" />
+    <img alt="ui-2" src="./internals/readme-2.png" />
 </div>
 <br />
 
