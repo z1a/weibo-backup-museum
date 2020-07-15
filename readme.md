@@ -1,5 +1,5 @@
 <div align="center">
-    <img alt="styled-components" src="./resources/icon.png" height="128px" />
+    <img alt="weibo-backup-meseum" src="./resources/icon.png" height="128px" />
 </div>
 <h2 align="center">Weibo Backup Museum</h2>
 <h4 align="center">微博博物馆 - 简单好看的微博备份+浏览软件</h4>
@@ -10,6 +10,12 @@
 - ** 无需登录：** 目前使用 m.weibo.cn API，无需登录即可备份。（将来会推出登录功能以方便备份私密微博）
 - ** 浏览：** 自带美观好用、无限滚动的浏览功能， 最快速抵达记忆深处～
 - ** 保存最原始的数据：** 保存下来的数据未经加工，以尽量避免信息丢失
+
+<div align="center">
+    <img alt="ui-1" src="./internals/readme-1.gif" />
+    <img alt="ui-2" src="./internals/readme-2.gif" />
+</div>
+<br />
 
 ## 使用说明
 
