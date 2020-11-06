@@ -51,11 +51,11 @@ export async function fixNextId({ uid }: { uid: string }) {
       // Try to fetch older posts
       const { cards } = await fetchPostsSinceID({ uid, sinceID: id, count: 10 })
 
-      // There are older posts
       if (
         cards[0] &&
         parseTime(cards[0].mblog.created_at).valueOf() <= museum_created_at_unix
       ) {
+        // There are older posts
         log(`Post ${id} is not the earliest post.`)
       } else {
         log(`Post ${id} is the earliest post. Adding the flag.`)

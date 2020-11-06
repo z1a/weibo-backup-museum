@@ -27,6 +27,7 @@ async function readJsonSafe(file: string, fallback?: unknown) {
     const text = await promises.readFile(file, "utf8")
     return JSON.parse(text) as unknown
   } catch (e) {
+    console.error(`Error reading the json ${file}`)
     console.error(e)
     return fallback
   }

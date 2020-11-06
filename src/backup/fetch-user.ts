@@ -21,7 +21,7 @@ export async function fetchUserLoop({
 }) {
   const { cards, nextID } = await fetchPostsSinceID({ uid, sinceID })
 
-  // Process andt merge data
+  // Process and merge data
   const mblogs = cards.filter((c) => c.card_type === 9).map((c) => c.mblog)
 
   // Print user contents to screen
