@@ -10,6 +10,8 @@ function createWindow() {
     webPreferences: {
       // TODO: Check if it is necessary to disable it
       nodeIntegration: true,
+      // TODO: Check if it is necessary to disable it
+      contextIsolation: false,
       enableRemoteModule: true,
     },
   })
