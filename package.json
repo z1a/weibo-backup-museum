@@ -38,18 +38,18 @@
     }
   },
   "dependencies": {
-    "moment": "^2.27.0",
-    "polished": "^3.6.5",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "styled-components": "^5.1.1"
+    "moment": "^2.29.1",
+    "polished": "^4.1.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.2.3"
   },
   "devDependencies": {
-    "@types/react": "^16.9.41",
-    "@types/react-dom": "^16.9.8",
-    "@types/styled-components": "^5.1.1",
-    "electron": "^9.4.0",
-    "electron-builder": "^22.7.0",
-    "typescript": "^3.9.6"
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.3",
+    "@types/styled-components": "^5.1.9",
+    "electron": "^12.0.5",
+    "electron-builder": "^22.10.5",
+    "typescript": "^4.2.4"
   }
 }
