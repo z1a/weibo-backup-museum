@@ -1,7 +1,6 @@
 import { MuseumPost } from "../types"
 import { log } from "./utils/log"
 import { fetchPostsSinceID } from "./utils/api"
-import { parseTime } from "./utils/parse-time"
 import { paths } from "../config"
 import {
   loadUserPosts,
@@ -53,7 +52,7 @@ export async function fixNextId({ uid }: { uid: string }) {
 
       if (
         cards[0] &&
-        parseTime(cards[0].mblog.created_at).valueOf() <= museum_created_at_unix
+        +new Date(cards[0].mblog.created_at) <= museum_created_at_unix
       ) {
         // There are older posts
         log(`Post ${id} is not the earliest post.`)

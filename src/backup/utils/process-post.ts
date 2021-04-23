@@ -1,5 +1,4 @@
 import { MuseumPost, WeiboPost, WeiboUser } from "../../types"
-import { parseTime } from "./parse-time"
 
 type ProcessPost = (
   mblog: WeiboPost
@@ -13,7 +12,7 @@ export const processPost: ProcessPost = (mblog) => {
   // User can be null for deleted post.
   const userID = user?.id
   const museumPost: MuseumPost = {
-    museum_created_at_unix: parseTime(mblog.created_at).valueOf(),
+    museum_created_at_unix: +new Date(mblog.created_at),
     museum_user_id: userID,
     museum_retweeted_status_id: retweeted_status
       ? retweeted_status.id
