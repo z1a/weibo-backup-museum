@@ -20,7 +20,7 @@ const Container = styled.div`
 
 export const App = () => {
   const [uid, setUid] = useState<string>()
-  const [mode, setMode] = useState<Mode>()
+  const [mode, setMode] = useState(Mode.backup)
   const [reversed, setReversed] = useState(true)
   useEffect(() => {
     const task = async () => {
@@ -43,7 +43,7 @@ export const App = () => {
     setUid(uid)
   }, [])
 
-  return mode === undefined ? null : (
+  return (
     <>
       <TitleBar
         mode={mode}
