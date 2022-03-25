@@ -905,10 +905,10 @@ electron-publish@22.10.5:
     lazy-val "^1.0.4"
     mime "^2.5.0"
 
-electron@^13.0.0-beta.17:
-  version "13.0.0-beta.17"
-  resolved "https://registry.yarnpkg.com/electron/-/electron-13.0.0-beta.17.tgz#c8df8fcc732048dc2430425a24b763628634a8fc"
-  integrity sha512-gfVN6e61mjM1x3h3z57hFb6fFrKee/LhPp0za5NK9MvnDTloO3ZMAK4wDUlmOZicMFYWgEFxSxjqD/DFCOP/GQ==
+electron@^13.6.6:
+  version "13.6.6"
+  resolved "https://registry.yarnpkg.com/electron/-/electron-13.6.6.tgz#ebd4754b2b55d54a2e8e9cdc3d0a2bb6b7053827"
+  integrity sha512-TP2Bl1nTxaH1yRmlYiF7imzvKE/NASE0cl6wOYA3AaP/UrBGc4L3NwJfn5Z55o+1t4TH8vCRxENufESyb32HhA==
   dependencies:
     "@electron/get" "^1.0.1"
     "@types/node" "^14.6.2"
